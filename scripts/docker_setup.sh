@@ -100,7 +100,7 @@ elif [[ $MAC == 1 ]]; then
     if [ ! -d "/opt/VirtualGL/bin" ]; then
         install_app_brew VirtualGL
     fi
-    /opt/VirtualGL/bin/vglclient -detach
+    /opt/VirtualGL/bin/vglclient -ipv6 -detach
 
     echo "[SUCCESS] macOS is configured. This will need to be ran every time you restart your computer."
 fi
